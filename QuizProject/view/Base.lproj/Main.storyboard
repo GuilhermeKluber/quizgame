@@ -14,39 +14,39 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Cuc-wp-WJ9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cuc-wp-WJ9">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="H7Z-g9-ZwK">
-                                <rect key="frame" x="32" y="306" width="350" height="224"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="H7Z-g9-ZwK" userLabel="StackViewButtons">
+                                <rect key="frame" x="32" y="320" width="350" height="200"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ena-im-Yqz">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="55.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="47.333333333333336"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
                                         <state key="normal" title="Começar Quiz"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mek-RS-yVm">
-                                        <rect key="frame" x="0.0" y="84.333333333333343" width="350" height="55.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="76.333333333333314" width="350" height="47.333333333333343"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
                                         <state key="normal" title="Gerenciador de questões"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fz8-Yc-i9T">
-                                        <rect key="frame" x="0.0" y="168.66666666666666" width="350" height="55.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="152.66666666666669" width="350" height="47.333333333333343"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="26"/>
                                         <state key="normal" title="Sobre"/>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="224" id="4TF-wl-gfI"/>
-                                    <constraint firstAttribute="width" constant="350" id="6qd-Vq-mAP"/>
+                                    <constraint firstAttribute="height" constant="200" id="etf-qw-WeR"/>
+                                    <constraint firstAttribute="width" constant="350" id="hjb-gj-8JW"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5uK-3u-2ax" userLabel="StackViewTitle">
@@ -55,22 +55,44 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="020-letter-q.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mri-Y6-0Uf">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="6Fy-mW-sWd"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="9FZ-NA-5X8"/>
                                             <constraint firstAttribute="width" constant="60" id="S6k-tT-yti"/>
                                         </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="016-letter-u.png" translatesAutoresizingMaskIntoConstraints="NO" id="YV4-dC-42l">
                                         <rect key="frame" x="60" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="fiW-s3-bBX"/>
+                                            <constraint firstAttribute="width" constant="60" id="nvb-Vx-eIQ"/>
+                                        </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="028-letter-i.png" translatesAutoresizingMaskIntoConstraints="NO" id="HMW-eI-OKZ">
                                         <rect key="frame" x="120" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="6Gf-Ws-Ann"/>
+                                            <constraint firstAttribute="width" constant="60" id="H2V-ve-hdz"/>
+                                        </constraints>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="011-letter-z.png" translatesAutoresizingMaskIntoConstraints="NO" id="NS2-UC-T4i">
                                         <rect key="frame" x="180" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="QxR-Mz-7Vv"/>
+                                            <constraint firstAttribute="width" constant="60" id="q7D-Z7-VK0"/>
+                                        </constraints>
                                     </imageView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="NS2-UC-T4i" firstAttribute="top" secondItem="5uK-3u-2ax" secondAttribute="top" id="8Ue-Ed-4uF"/>
+                                    <constraint firstItem="Mri-Y6-0Uf" firstAttribute="top" secondItem="5uK-3u-2ax" secondAttribute="top" id="ARj-q6-BcS"/>
+                                    <constraint firstAttribute="bottom" secondItem="HMW-eI-OKZ" secondAttribute="bottom" id="EYJ-Vh-hDh"/>
+                                    <constraint firstAttribute="bottom" secondItem="YV4-dC-42l" secondAttribute="bottom" id="TL0-9S-O62"/>
+                                    <constraint firstItem="YV4-dC-42l" firstAttribute="top" secondItem="5uK-3u-2ax" secondAttribute="top" id="TTA-t5-sED"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mri-Y6-0Uf" secondAttribute="bottom" id="V39-bM-VnD"/>
                                     <constraint firstAttribute="height" constant="60" id="fpf-jA-qD5"/>
                                     <constraint firstAttribute="width" constant="240" id="lxQ-gH-yib"/>
+                                    <constraint firstItem="HMW-eI-OKZ" firstAttribute="top" secondItem="5uK-3u-2ax" secondAttribute="top" id="mx1-TV-Z6E"/>
+                                    <constraint firstAttribute="bottom" secondItem="NS2-UC-T4i" secondAttribute="bottom" id="uYF-S3-zoJ"/>
                                 </constraints>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="babla-quiz.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tz9-KR-RXl">
@@ -80,10 +102,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="H7Z-g9-ZwK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5YQ-84-Ad9"/>
+                            <constraint firstItem="H7Z-g9-ZwK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CbA-WV-6hZ"/>
+                            <constraint firstItem="H7Z-g9-ZwK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Daa-rt-37d"/>
                             <constraint firstItem="Cuc-wp-WJ9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Mq5-dy-uWG"/>
-                            <constraint firstItem="H7Z-g9-ZwK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="P71-db-8CV"/>
                             <constraint firstItem="Cuc-wp-WJ9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="apx-ej-K2D"/>
-                            <constraint firstItem="H7Z-g9-ZwK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dpG-H6-te9"/>
                             <constraint firstItem="Cuc-wp-WJ9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="rFQ-4W-9qO"/>
                             <constraint firstItem="Cuc-wp-WJ9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rOq-2l-33g"/>
                             <constraint firstItem="5uK-3u-2ax" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yNn-cF-il5"/>
@@ -91,6 +114,11 @@
                             <constraint firstItem="5uK-3u-2ax" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="z6g-7N-iMN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="CbA-WV-6hZ"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
