@@ -9,12 +9,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var qcontroller = QuestionsController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "segueQuiz"{
+            let next = segue.destination as! QuizViewController
+            next.qcontroller = qcontroller
+        }
+        else if segue.identifier == "segueEdit"{
+            let next = segue.destination as! QuestionsTableViewController
+            next.qcontroller = qcontroller
+        }
+        
+    }
+    
+    @IBAction func start(_ sender: UIButton) {
+        
+    }
+    
 }
 
